@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 16px;
+    padding: 20px;
+    background: #f5f5f5;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+/* First content box */
+
+.box-one {
+    float: left;
+    background: white;
+    max-width: 100%;
+    border: 0px solid #666;
+    border-top-width: 6px;
+    border-top-color: #cccccc;
+    padding-left: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.box-one h1 {
+    color: #0974b3;
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+}
+
+.box-one p {
+    width: 100%;
+    text-align: justify;
+    display: block;
+    color: #666;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.content-box {
+    width: 100%;
+}
+
+.content-box p {
+    width: 100%;
+    text-align: justify;
+    display: block;
+    color: #666;
+    padding-right: 20px;
+}
+
+.content-box img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    width: 150px;
+    transition: opacity 0.5s ease;
+}
+
+.button {
+    margin-right: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.button a {
+    display: inline-block;
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 60px;
+    width: 100%;
+    background: #177bb6;
+    color: white;
+    text-decoration: none;
+    padding-top: 15px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+/* Second content box */
+
+.box-two {
+    display: inline-block;
+    background: white;
+    max-width: 100%;
+    border: 0px solid #666;
+    border-top-width: 6px;
+    border-top-color: #cccccc;
+    padding-left: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.box-two h1 {
+    color: #0974b3;
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+}
+
+.box-two p {
+    width: 100%;
+    text-align: justify;
+    display: block;
+    color: #666;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.content-box-two {
+    width: 100%;
+}
+
+.content-box-two p {
+    width: 100%;
+    text-align: justify;
+    display: block;
+    color: #666;
+    padding-right: 20px;
+}
+
+.content-box-two img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    width: 150px;
+    transition: opacity 0.5s ease;
+}
+
+.button {
+    margin-right: 20px;
+}
+
+.button a {
+    display: inline-block;
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 60px;
+    width: 100%;
+    background: #177bb6;
+    color: white;
+    text-decoration: none;
+    padding-top: 15px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+/* Third content box */
+
+.box-three {
+    float: right;
+    background: white;
+    max-width: 100%;
+    border: 0px solid #666;
+    border-top-width: 6px;
+    border-top-color: #cccccc;
+    padding-left: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.box-three h1 {
+    color: #0974b3;
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+}
+
+.box-three p {
+    width: 100%;
+    text-align: justify;
+    display: block;
+    color: #666;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.content-box-three {
+    width: 100%;
+}
+
+.content-box-three p {
+    width: 100%;
+    text-align: justify;
+    display: block;
+    color: #666;
+    padding-right: 20px;
+}
+
+.content-box-three img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    width: 150px;
+    transition: opacity 0.5s ease;
+}
+
+.button {
+    margin-right: 20px;
+}
+
+.button a {
+    display: inline-block;
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 60px;
+    width: 100%;
+    background: #177bb6;
+    color: white;
+    text-decoration: none;
+    padding-top: 15px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.image-zoom {
+    position: relative;
+    width: 150px;
+}
+
+/* Hovers */
+
+.box-one:hover, .box-two:hover, .box-three:hover {
+    transform: translateY(-5px);
+    border-top-color: #177bb6;
+}
+
+.button a:hover {
+    background: #153a5e;
+}
+
+.content-box img:hover, .content-box-two img:hover, .content-box-three img:hover {
+    opacity: 0.5;
+}
